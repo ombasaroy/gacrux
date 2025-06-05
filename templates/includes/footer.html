@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
-                    <a href="index.html"><img src="{% static 'images/logo2.jpg' %}" class="img-fluid" width="160px" alt="footer-logo"></a>
-                    <p class="morbi">To provide expert consultancy services that drive innovation, operational efficiency, and sustainable
+                    <a href="{% url 'index' %}"><img src="{% static 'images/logo2.jpg' %}" class="img-fluid" width="160px" alt="footer-logo"></a>
+                    <p class="morbi">We provide expert consultancy services that drive innovation, operational efficiency, and sustainable
                         growth for our clients across diverse industries.</p>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
@@ -12,18 +12,16 @@
                     <div class="row">
                         <div class="col-6">
                             <ul class="usefulLinks-List">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="project.html">Why Choose Us</a></li>
-                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="{% url 'about-us' %}">About Us</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="{% url 'contact-us' %}">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul class="usefulLinks-List">
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">T & C</a></li>
+
+{#                                <li><a href="#">Privacy Policy</a></li>#}
+{#                                <li><a href="#">T & C</a></li>#}
                             </ul>
                         </div>
                     </div>
@@ -33,11 +31,11 @@
                     <div class="row">
                         <div class="col-6">
                             <ul class="usefulLinks-List">
-                                <li><a href="plumbing-service.html">Project Management</a></li>
-                                <li><a href="roofing-service.html">Agricultural Management</a></li>
-                                <li><a href="carpentry-service.html">ICT</a></li>
-                                <li><a href="cleaning-service.html">Business Development</a></li>
-                                <li><a href="cleaning-service.html">Business Compliance</a></li>
+                                <li><a href="{% url 'project-management' %}">Project Management</a></li>
+                                <li><a href="{% url 'agriculture' %}">Agricultural Management</a></li>
+                                <li><a href="{% url 'ict' %}">ICT</a></li>
+                                <li><a href="{% url 'business-development' %}">Business Development</a></li>
+                                <li><a href="{% url 'business-compliance' %}">Business Compliance</a></li>
                             </ul>
                         </div>
 {#                        <div class="col-6">#}
@@ -62,7 +60,6 @@
 {#                                <p>+1 (248) 357 8866</p>#}
 {#                            </a>#}
                             <a href="tel:+254733808973" class="CallUs-phone"> <p>+254 733 808973</p> </a> <br>
-                            <a href="tel:+254729175903" class="CallUs-phone"> <p>+254 729 175903</p> </a>
                         </div>
                     </div>
                     <div class="head-phone-white-main">

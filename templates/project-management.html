@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <!-- ====================================== Section One ===================================== -->
+     <section class="section-one">
+        <div class="page-img-header" id="roofing-service-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">Project Management</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href="{% url 'services' %}"> SERVICES /</a>
+                    <a href="{% url 'project-management' %}"> Project Management</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="section-eight" id="services-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+{#                    <h2 class="handyman-text fade_down pt-0">Adipiscing iaculis iaculis enim enim magna sociis morbi#}
+{#                        interdum varius.</h2>#}
+                    <p class="fusce fade_down">We offer turnkey project management services,
+                                helping clients translate ideas into reality
+                                through efficient planning, execution,
+                                monitoring, and closure. Our approach blends
+                                international best practices (PMBOK, Agile,
+                                PRINCE2) with local context for practical,
+                                measurable outcomes.
+
+                    </p>
+                    <h4 class="interdum fade_down">Solar Energy Projects</h4>
+
+                    <div class="plan-body plumbing-body-list fade_down">
+
+                        <ol>
+                            <li><b>Feasibility Analysis:</b>  Site suitability assessments, solar potential studies, and environmental impact evaluation.</li>
+                            <li><b>System Design & Installation Oversight:</b> From solar mini-grids to rooftop solutions, we manage procurement, installation, and quality assurance.</li>
+                            <li><b>Project Financing & ROI Modeling:</b> Guidance on donor funding, carbon credits, and payback strategies for solar investments.</li>
+                            <li><b>Post-Installation Maintenance Plans:</b> Monitoring system performance and planning periodic maintenance for optimal efficiencу.</li>
+                        </ol>
+                    </div>
+
+                    <div class="plumbing-grid img-animation-style1 reveal">
+                        <img src="{% static 'images/services-page/roofing-services-img3.jpg' %}" alt="roofing-services-img3">
+                        <img src="{% static 'images/services-page/roofing-services-img4.jpg' %}" alt="roofing-services-img4">
+                    </div>
+
+                    <h4 class="interdum fade_down">Construction Projects</h4>
+
+                    <div class="plan-body plumbing-body-list fade_down">
+
+                        <ol>
+                            <li><b>Project Planning & Architectural Coordination:</b> Assisting with designs, BoQs, and permit acquisition. </li>
+                            <li><b>On-Site Supervision & Contractor Management: </b> Overseeing timelines, material use, and compliance with safety and quality standards. </li>
+                            <li><b>Budget Control & Cost Optimization:</b> Ensuring projects remain within financial scope while maintaining top quality.</li>
+                            <li><b>Community Engagement:</b> Stakeholder consultations for socially accepted infrastructure rollouts.</li>
+                        </ol>
+                    </div>
+
+                    <div class="plumbing-grid img-animation-style1 reveal">
+                        <img src="{% static 'images/services-page/air-services-img2.jpg' %}" alt="roofing-services-img3">
+                        <img src="{% static 'images/services-page/air-services-img3.jpg' %}" alt="roofing-services-img4">
+                    </div>
+                </div>
+
+
+{#                Include sevices sidebar#}
+                {% include 'includes/services-sidebar.html' %}
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Teams Section  ===================================== -->
+
+    {% include 'includes/faq.html' %}
+
+
+{% endblock %}

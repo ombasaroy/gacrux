@@ -28,101 +28,86 @@
         </div>
         <div class="container header-sub">
             <div class="logo">
-                <a href="index.html"><img src="{% static 'images/logo.png' %}" class="img-fluid" width="150" alt="logo"></a>
+                <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" class="img-fluid" width="150" alt="logo"></a>
             </div>
             <div class="menuOverlay"></div>
             <nav class="menu">
                 <div class="side-menu-logo">
-                    <a href="index.html"><img src="{% static 'images/logo2.jpg' %}" class="img-fluid" width="150" alt="logo"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'images/logo2.jpg' %}" class="img-fluid" width="150" alt="logo"></a>
                     <button class="close-menu d-none"><img src="{% static 'images/svg/x.svg' %}" alt="x"></button>
                 </div>
                 <ul class="menu-list">
-                    <li class="active-home">
-                        <a class="conta-home" href="index.html">Home</a>
+                    <li class="wrapper wrapper-men {% if request.path == '/' %} active-home {% endif %}">
+                        <a class="conta-home" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="wrapper wrapper-men {% if request.path == '/about-us/' %} active-home {% endif %}" >
+                        <a class="" href="{% url 'about-us' %}">About Us
+{#                            <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">#}
+                        </a>
+{#                        <div class="menu-ul-list">#}
+{#                            <div class="menu-ul-list-d">#}
+{#                                <ul>#}
+{#                                    <li><a class="submenu-link" href="about.html">About Us</a></li>#}
+{#                                    <li><a class="submenu-link" href="team.html">Our Team</a></li>#}
+{#                                </ul>#}
+{#                                <img src="{% static 'images/home-page/image-Photo.png' %}" alt="image-Photo">#}
+{#                            </div>#}
+{#                        </div>#}
                     </li>
                     <li class="wrapper wrapper-men">
-                        <a class="menu-dropdown menu-text" href="javascript:void(0)">Pages
+                        <a class="menu-dropdown menu-text" href="javascript:void(0)" data-url="{% url 'services' %}">Services
                             <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">
                         </a>
                         <div class="menu-ul-list">
                             <div class="menu-ul-list-d">
                                 <ul>
-                                    <li><a class="submenu-link" href="about.html">About Us</a></li>
-                                    <li><a class="submenu-link" href="team.html">Our Team</a></li>
-                                    <li><a class="submenu-link" href="single-team.html">Single Team</a></li>
-                                    <li><a class="submenu-link" href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a class="submenu-link" href="get-quote.html">Get Your Quote</a></li>
-                                    <li><a class="submenu-link" href="our-clients.html">Our Clients</a></li>
-                                    <li><a class="submenu-link" href="testimonials.html">Testimonials</a></li>
-                                    <li><a class="submenu-link" href="faq.html">FAQs</a></li>
-                                    <li><a class="submenu-link" href="error404.html">404 Page</a></li>
-                                    <li><a class="submenu-link" href="coming-soon.html">Coming Soon</a></li>
+                                    <li><a class="submenu-link" href="{% url 'project-management' %}">Project Management</a></li>
+                                    <li><a class="submenu-link" href="{% url 'ict' %}">ICT</a></li>
+                                    <li><a class="submenu-link" href="{% url 'business-compliance' %}">Business Compliance</a></li>
+                                    <li><a class="submenu-link" href="{% url 'agriculture' %}">Agriculture</a></li>
+                                    <li><a class="submenu-link" href="{% url 'business-development' %}">Business Development</a></li>
                                 </ul>
-                                <img src="{% static 'images/home-page/image-Photo.png' %}" alt="image-Photo">
+{#                                <img src="{% static 'images/home-page/image-Photo2.png' %}" alt="image-Photo2">#}
                             </div>
                         </div>
                     </li>
-                    <li class="wrapper wrapper-men">
-                        <a class="menu-dropdown menu-text" href="javascript:void(0)">Services
-                            <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">
-                        </a>
-                        <div class="menu-ul-list">
-                            <div class="menu-ul-list-d">
-                                <ul>
-                                    <li><a class="submenu-link" href="services.html">Services</a></li>
-                                    <li><a class="submenu-link" href="plumbing-service.html">Plumbing Service</a></li>
-                                    <li><a class="submenu-link" href="roofing-service.html">Roofing Service</a></li>
-                                    <li><a class="submenu-link" href="carpentry-service.html">Carpentry Service</a></li>
-                                    <li><a class="submenu-link" href="cleaning-service.html">Cleaning Service</a></li>
-                                    <li><a class="submenu-link" href="AirCondition-service.html">Air Condition
-                                            Service</a></li>
-                                    <li><a class="submenu-link" href="painting-service.html">Painting Service</a></li>
-                                    <li><a class="submenu-link" href="electrical-service.html">Electrical Service</a>
-                                    </li>
-                                    <li><a class="submenu-link" href="solar-service.html">Solar Service</a></li>
-                                    <li><a class="submenu-link" href="welding-service.html">Welding Service</a></li>
-                                </ul>
-                                <img src="{% static 'images/home-page/image-Photo2.png' %}" alt="image-Photo2">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="wrapper wrapper-men">
-                        <a class="menu-dropdown menu-text" href="javascript:void(0)">Projects
-                            <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">
-                        </a>
-                        <div class="menu-ul-list">
-                            <div class="menu-ul-list-d">
-                                <ul>
-                                    <li><a class="submenu-link" href="project.html">Projects 1</a></li>
-                                    <li><a class="submenu-link" href="project2.html">Projects 2</a></li>
-                                    <li><a class="submenu-link" href="project3.html">Projects 3</a></li>
-                                    <li><a class="submenu-link" href="single-project.html">Single Project 1</a></li>
-                                    <li><a class="submenu-link" href="single-project2.html">Single Project 2</a></li>
-                                    <li><a class="submenu-link" href="single-project3.html">Single Project 3</a></li>
-                                </ul>
-                                <img src="{% static 'images/home-page/image-Photo3.png' %}" alt="image-Photo3">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="wrapper wrapper-men">
-                        <a class="menu-dropdown menu-text" href="javascript:void(0)">Blogs
-                            <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">
-                        </a>
-                        <div class="menu-ul-list">
-                            <div class="menu-ul-list-d">
-                                <ul>
-                                    <li><a class="submenu-link" href="our-blog.html">Our Blog</a></li>
-                                    <li><a class="submenu-link" href="blog2.html">Two Grid Blog</a></li>
-                                    <li><a class="submenu-link" href="blog3.html">List Blog</a></li>
-                                    <li><a class="submenu-link" href="single-blog.html">Blog Right Sidebar</a></li>
-                                    <li><a class="submenu-link" href="single-blog2.html">Blog Left Sidebar</a></li>
-                                    <li><a class="submenu-link" href="single-blog3.html">Blog No Sidebar</a></li>
-                                </ul>
-                                <img src="{% static 'images/home-page/image-Photo4.png' %}" alt="image-Photo4">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="conta-home"><a href="contact.html">Contact Us</a></li>
+{#                    <li class="wrapper wrapper-men">#}
+{#                        <a class="menu-dropdown menu-text" href="javascript:void(0)">Projects#}
+{#                            <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">#}
+{#                        </a>#}
+{#                        <div class="menu-ul-list">#}
+{#                            <div class="menu-ul-list-d">#}
+{#                                <ul>#}
+{#                                    <li><a class="submenu-link" href="project.html">Projects 1</a></li>#}
+{#                                    <li><a class="submenu-link" href="project2.html">Projects 2</a></li>#}
+{#                                    <li><a class="submenu-link" href="project3.html">Projects 3</a></li>#}
+{#                                    <li><a class="submenu-link" href="single-project.html">Single Project 1</a></li>#}
+{#                                    <li><a class="submenu-link" href="single-project2.html">Single Project 2</a></li>#}
+{#                                    <li><a class="submenu-link" href="single-project3.html">Single Project 3</a></li>#}
+{#                                </ul>#}
+{#                                <img src="{% static 'images/home-page/image-Photo3.png' %}" alt="image-Photo3">#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </li>#}
+{#                    <li class="wrapper wrapper-men">#}
+{#                        <a class="menu-dropdown menu-text" href="javascript:void(0)">Blogs#}
+{#                            <img class="arrow-icon-menu" src="{% static 'images/svg/down-arrow.svg' %}" alt="down-arrow">#}
+{#                        </a>#}
+{#                        <div class="menu-ul-list">#}
+{#                            <div class="menu-ul-list-d">#}
+{#                                <ul>#}
+{#                                    <li><a class="submenu-link" href="our-blog.html">Our Blog</a></li>#}
+{#                                    <li><a class="submenu-link" href="blog2.html">Two Grid Blog</a></li>#}
+{#                                    <li><a class="submenu-link" href="blog3.html">List Blog</a></li>#}
+{#                                    <li><a class="submenu-link" href="single-blog.html">Blog Right Sidebar</a></li>#}
+{#                                    <li><a class="submenu-link" href="single-blog2.html">Blog Left Sidebar</a></li>#}
+{#                                    <li><a class="submenu-link" href="single-blog3.html">Blog No Sidebar</a></li>#}
+{#                                </ul>#}
+{#                                <img src="{% static 'images/home-page/image-Photo4.png' %}" alt="image-Photo4">#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </li>#}
+                    <li class="conta-home {% if request.path == '/contact-us/' %} active-home {% endif %}"><a href="{% url 'contact-us' %}">Contact Us</a></li>
                 </ul>
                 <div class="side-menu-footer">
                     <a href="https://www.facebook.com/">
@@ -147,7 +132,6 @@
                     <p>Call Us</p>
 {#                    <a href="tel:+12483578866">+1 (248) 357 8866</a>#}
                     <a href="tel:+254733808973"> +254 733 808973</a> <br>
-                    <a href="tel:+254729175903"> +254 729 175903 </a>
                 </div>
             </div>
             <button class="menu-toggle"><img src="{% static 'images/svg/menu.svg' %}" alt="menu"></button>

@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <!-- ====================================== Section One ===================================== -->
+    <section class="section-one">
+        <div class="page-img-header" id="services-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">Our Services</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href="{% url 'services' %}"> SERVICES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Eight ===================================== -->
+    <section class="section-eight" id="services-page-section">
+        <div class="container">
+{#            <div class="quality-main about-qulity-main fade_down">#}
+{#                <p class="quality">our services</p>#}
+{#            </div>#}
+            <div class="handyman-services-textMain">
+{#                <h2 class="handyman-text handyman-services services-page-text fade_down">Our Services#}
+{#                </h2>#}
+                <p class="fusce malesuada tellus fade_down mt-0">We specialize in delivering tailored solutions across five
+                    key areas: Project Managemen , where we oversee initiatives from planning to execution; ICT
+                    Solution , offering modern digital tools and support; Agriculture Managemen , helping
+                    improve productivity and sustainability; Business Developmen , guiding growth strategies and innovation; and Business Complianc , ensuring organizations meet regulatory and legal standards.
+
+                </p>
+            </div>
+            <div class="row services-page-row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box" onclick="window.location.href='{% url "project-management" %}'">
+                    <img class="services-icon" src="{% static 'images/home-page/our-servicesimg1.jpg' %}"
+                        alt="our-servicesimg1">
+                    <div class="services-icon-box">
+                        <img class="plumbing" src="{% static 'images/svg/project.svg' %}" alt="project">
+                        <h2 class="services-solution-main-text">Project Management</h2>
+                        <p class="aliquam-text">We offer turnkey project management services, helping clients translate ideas into reality
+                            through efficient planning, execution, monitoring, and closure.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box" onclick="window.location.href='{% url "agriculture" %}'">
+                    <img class="services-icon" src="{% static 'images/home-page/our-servicesimg2.jpg' %}"
+                        alt="our-servicesimg2">
+                    <div class="services-icon-box">
+                        <img class="plumbing" src="{% static 'images/svg/agriculture.svg' %}" alt="agriculture">
+                        <h2 class="services-solution-main-text">Agriculture Development</h2>
+                        <p class="aliquam-text">From smallholder programs to commercial farms, we
+                            guide project rollout including land preparation, input procurement, and planting schedules.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box" onclick="window.location.href='{% url "ict" %}'">
+                    <img class="services-icon" src="{% static 'images/home-page/our-servicesimg3.jpg' %}"
+                        alt="our-servicesimg3">
+                    <div class="services-icon-box">
+                        <img class="plumbing" src="{% static 'images/svg/ict.svg' %}" alt="ict">
+                        <h2 class="services-solution-main-text">Information Communication Technology</h2>
+                        <p class="aliquam-text">Our ICT services help businesses navigate and thrive in the digital era through smart
+                        solutions that blend strategy, creativity, and technology.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box" onclick="window.location.href='{% url "business-development" %}'">
+                    <img class="services-icon" src="{% static 'images/home-page/our-servicesimg4.jpg' %}"
+                        alt="our-servicesimg4">
+                    <div class="services-icon-box">
+                        <img class="plumbing" src="{% static 'images/svg/business.svg' %}" alt="cleaning">
+                        <h2 class="services-solution-main-text">Business Development Services</h2>
+                        <p class="aliquam-text">We empower organizations at every stage of growth -from ideation to market
+                            dominance - with tools, insights, and strategies that foster sustainable success.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box" onclick="window.location.href='{% url "business-compliance" %}'">
+                        <img class="services-icon" src="{% static 'images/home-page/our-servicesimg5.jpg' %}"
+                            alt="our-servicesimg4">
+                        <div class="services-icon-box">
+                            <img class="plumbing" src="{% static 'images/svg/compliance.svg' %}" alt="cleaning">
+                            <h2 class="services-solution-main-text">Business Compliance</h2>
+                            <p class="aliquam-text">Our Business Compliance Services are designed to simplify the process
+                            and ensure your operations remain fully aligned with Kenyan laws and international standards.</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

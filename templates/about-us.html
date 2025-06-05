@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageTitle %}<title>About us</title>{% endblock %}
+
+
+{% block main %}
+    <!-- ====================================== Section One ===================================== -->
+    <section class="section-one">
+        <div class="page-img-header" id="about-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">About Us</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href="{% url 'about-us' %}"> ABOUT US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- ====================================== Section Two ===================================== -->
+    <section class="section-eight" id="services-page-section" style="height: 100vh; padding: 1rem 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+                    <h2 class="handyman-text pt-0">We bring a proven blend of expertise, integrity, and
+                        results-driven execution to every engagement. </h2>
+                    <p class="mt-4 text-justify fs-5">At Gacrux Consultants Ltd, we empower organizations by delivering integrated solutions across project
+                        management, ICT, business development, and compliance. Our multi-sector expertise allows us to serve as a one-stop partner for
+                        businesses seeking both strategic insight and operational support. We believe every client is unique. That’s why we take the
+                        time to understand your goals, challenges, and operating environment. Our solutions are not only customized but also practical
+                        and scalable—designed to deliver measurable results that align with your long-term vision. From initial concept to final execution,
+                        we provide end-to-end support. Whether managing infrastructure projects or guiding organizational transformation, our approach
+                        ensures seamless delivery, quality control, and sustainable outcomes. Our team is made up of experienced consultants,
+                        project managers, analysts, and subject matter experts. With a diverse skill set and deep industry knowledge, we are
+                        committed to delivering excellence in every engagement. Driven by innovation, we use modern technologies and global best
+                        practices to help your organization stay competitive, efficient, and future-ready.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-eight" id="services-page-section" style="background-color: #fff4ee; height: 100vh">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12" >
+                    <h2 class="handyman-text mt-6">Why trust us </h2>
+                    <p class="mt-4 text-justify fs-5">You should trust Gacrux Consultants Ltd because we bring a proven blend of
+                        expertise, integrity, and results-driven execution to every engagement. Our team consists of
+                        seasoned professionals with diverse backgrounds in project management, business development,
+                        compliance, and ICT—each committed to delivering practical solutions that work in the real world.
+                        We don’t offer off-the-shelf answers; we take time to understand your unique needs and design
+                        strategies that are tailored, scalable, and measurable. Our end-to-end support means we’re with
+                        you from planning to completion, ensuring quality control, transparency, and accountability
+                        throughout. By leveraging global best practices and the latest technologies, we help you stay
+                        competitive, compliant, and future-ready—giving you confidence that your goals are in capable hands.
+
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Teams Section  ===================================== -->
+
+    {% include 'includes/faq.html' %}
+
+
+{% endblock %}

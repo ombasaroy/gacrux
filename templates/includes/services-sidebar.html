@@ -1,0 +1,37 @@
+{% load static %}
+
+<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12">
+                    <div class="single-services-black-box">
+                        <h3>Our Services</h3>
+                    </div>
+                    <div class="single-services-sub-box">
+                        <ul>
+                            <li class="pt-0">
+                                <a href="{% url 'project-management' %}" class="{% if request.path == '/project-management/' %} current-page-active {% endif %}">Project Management
+                                    <img src="{% static 'images/svg/right-arrow-short.svg' %}" alt="right-arrow-short">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'ict' %}" class = "{% if request.path == '/ict/' %} current-page-active {% endif %}" >ICT Solutions
+                                    <img src="{% static 'images/svg/right-arrow-short.svg' %}" alt="right-arrow-short">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'business-compliance' %}" class="{% if request.path == '/business-compliance/' %} current-page-active {% endif %}" >Business Compliance
+                                    <img src="{% static 'images/svg/right-arrow-short.svg' %}" alt="right-arrow-short">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'agriculture' %}" class="{% if request.path == '/agriculture/' %} current-page-active {% endif %}" >Agriculture Management
+                                    <img src="{% static 'images/svg/right-arrow-short.svg' %}" alt="right-arrow-short">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'business-development' %}" class="{% if request.path == '/business-development/' %} current-page-active {% endif %}" >Business Development
+                                    <img src="{% static 'images/svg/right-arrow-short.svg' %}" alt="right-arrow-short">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>

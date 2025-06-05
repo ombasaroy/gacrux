@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block pageTitle %}<title>Compliance</title>{% endblock %}
+
+{% block main %}
+    <!-- ====================================== Section One ===================================== -->
+     <section class="section-one">
+        <div class="page-img-header" id="air-service-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">Business Compliance</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href="{% url 'services' %}"> SERVICES /</a>
+                    <a href="{% url 'business-compliance' %}"> Business Compliance</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="section-eight" id="services-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+{#                    <h2 class="handyman-text fade_down pt-0">Adipiscing iaculis iaculis enim enim magna sociis morbi#}
+{#                        interdum varius.</h2>#}
+                    <p class="fusce fade_down">At Gacrux Consultants Ltd, we understand
+                        that navigating legal, regulatory, and statutory requirements can be overwhelming
+                        for businesses. Our Business Compliance Services are designed to simplify the process
+                        and ensure your operations remain fully aligned with Kenyan laws and international
+                        standards. Our Compliance Solutions Include:
+                        Company Registration & Structuring Assistance with business name registration,
+                        incorporation, and restructuring of entities.
+
+                    </p>
+                    <h2 class="interdum fade_down">Statutory Compliance</h2>
+                     <p class="fusce fade_down">Timely filing of returns (KRA, NSSF, NHIF,
+                        NITA), renewal of business permits, and tax compliance certificates.
+                    </p>
+
+                    <h2 class="interdum fade_down">Regulatory Licensing</h2>
+                     <p class="fusce fade_down">Support in obtaining sector-specific licenses
+                         (e.g., NCA, EPRA, MOH, KEBS, HELB compliance, Data Protection registration).
+                    </p>
+
+                    <h2 class="interdum fade_down">Contract Drafting & Review</h2>
+                     <p class="fusce fade_down">Preparation, analysis, and compliance review
+                        of contracts, MOUs, NDAs, and service agreements.
+                    </p>
+
+                    <h2 class="interdum fade_down">Corporate Governance & Policies</h2>
+                     <p class="fusce fade_down">Development of operational policies, HR
+                        manuals, whistleblower frameworks, and internal controls.
+                    </p>
+
+                    <h2 class="interdum fade_down">Labor & Employment Compliance</h2>
+                     <p class="fusce fade_down">Guidance on employment laws, contract
+                        management, dispute handling, and
+                        compliance with labor regulations.
+                    </p>
+
+                    <h2 class="interdum fade_down">Business Advisory on Compliance Changes</h2>
+                     <p class="fusce fade_down">Guidance on employment laws, contract
+                        management, dispute handling, and
+                        compliance with labor regulations.
+                    </p>
+
+                    <div class="plumbing-grid img-animation-style1 reveal">
+                        <img src="{% static 'images/home-page/estimate-img3.jpg' %}" alt="roofing-services-img3">
+                        <img src="{% static 'images/home-page/our-servicesimg5.jpg' %}" alt="roofing-services-img4">
+                    </div>
+                </div>
+
+
+{#                Include sevices sidebar#}
+                {% include 'includes/services-sidebar.html' %}
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Teams Section  ===================================== -->
+
+    {% include 'includes/faq.html' %}
+
+
+{% endblock %}

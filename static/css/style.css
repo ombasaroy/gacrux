@@ -69,6 +69,10 @@ p {
 a {
     text-decoration: none;
 }
+
+a:hover{
+    color: #FF6A00FF;
+}
 dl,
 ol,
 ul {
@@ -688,7 +692,7 @@ header {
 }
 .handyman-text {
     color: var(--3, #000);
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 64px;
     padding-top: 20px;
@@ -1806,6 +1810,11 @@ button.bottom-top-button:hover {
 .image29 {
     max-width: 100%;
 }
+
+.text-justify{
+    text-align: justify;
+    text-align: justify;
+}
 .img-group-about-page {
     display: flex;
     flex-direction: column;
@@ -2705,7 +2714,7 @@ input:checked+.slid-btn:before {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url("/static/images/services-page/cleaning-services-img.jpg");
 }
 #air-service-bg {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url("/static/images/services-page/air-services-img.jpg");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url("/static/images/services-page/cleaning-services-img2.jpg");
 }
 #paint-service-bg {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url("/static/images/services-page/paint-services-img.jpg");

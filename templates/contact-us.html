@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{%  load static  %}
+{% block pageTitle %}<title>Contact us</title>{% endblock %}
+
+
+{% block main %}
+     <!-- ====================================== Section One ===================================== -->
+    <section class="section-one">
+        <div class="page-img-header" id="conatct-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">Contact Us</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href="{% url 'contact-us' %}">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Eight ===================================== -->
+    <section class="section-eight">
+        <div class="container">
+            <div class="row">
+                <div class="quality-main about-qulity-main fade_down">
+                    <p class="quality">CONTACT OUR EXPERTS</p>
+                </div>
+                <h2 class="handyman-text handyman-services project-page-heading fade_down">Reach Out & Connect
+                </h2>
+                <div class="col-xxl-6 col-xl-6 col-lg-6">
+
+                    <div class="contact-head-main">
+                        <div class="head-phone-white-main contact-deatils-head">
+                            <div class="headphone-white">
+                                <img src="{% static '/images/svg/headphone-white.svg' %}" alt="headphone-white">
+                            </div>
+                            <div>
+                                <p class="CallUs">Call Us</p>
+                                <a href="tel:+254733808973" class="CallUs-phone">
+                                    <p>+254 733 808973</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="head-phone-white-main contact-deatils-head">
+                            <div class="headphone-white">
+                                <img src="{% static '/images/svg/email-White.svg' %}" alt="email-White">
+                            </div>
+                            <div>
+                                <p class="CallUs">Email Us</p>
+                                <a href="mailto:contact@gacrux.co.ke" class="CallUs-phone">
+                                    <p>contact@gacrux.co.ke</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="head-phone-white-main contact-deatils-head">
+                            <div class="headphone-white">
+                                <img src="{% static 'images/svg/loaction-white.svg' %}" alt="loaction-white">
+                            </div>
+                            <div>
+                                <p class="CallUs">Find Us</p>
+                                <p class="CallUs-phone">Posta Towers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-media-icon-main-head" id="conat-media-icon-main-head">
+                        <a href="https://www.facebook.com/">
+                            <div class="home-media-icon-main">
+                                <img src="{% static 'images/svg/facebook.svg' %}" alt="home-fb-icon">
+                            </div>
+                        </a>
+                        <a href="https://x.com/">
+                            <div class="home-media-icon-main">
+                                <img src="{% static 'images/svg/twiiter.svg' %}" alt="home-tw-icon">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <div class="home-media-icon-main">
+                                <img src="{% static 'images/svg/insta.svg' %}" alt="home-insta-icon">
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <div class="home-media-icon-main">
+                                <img src="{% static 'images/svg/linkdien.svg' %}" alt="home-be-icon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6">
+                    <div class="search-box-main" id="contact-page-form">
+                        <div class="search-input">
+                            <input type="text" placeholder="Your Name*">
+                        </div>
+                        <div class="search-input">
+                            <input type="text" placeholder="Your Phone Number*">
+                        </div>
+                        <div class="search-input">
+                            <input type="email" placeholder="Your Email*">
+                        </div>
+                        <div class="search-input">
+                            <textarea placeholder="Message Here..."></textarea>
+                        </div>
+                        <div class="Submit mb-0">
+                            <a href="#" class="btn-main btn2">Contact Us
+                                <span class="arrow-section">
+                                    <img class="arrow" src="{% static 'images/svg/right-arrow-svg.svg' %}"
+                                        alt="right-arrow-svg">
+                                </span>
+                                <div class="btn-box-left btn2"></div>
+                                <div class="btn-box-right btn2"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

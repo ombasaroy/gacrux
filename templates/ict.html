@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <!-- ====================================== Section One ===================================== -->
+     <section class="section-one">
+        <div class="page-img-header" id="cleaning-service-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">ICT</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href="{% url 'services' %}"> SERVICES /</a>
+                    <a href="{% url 'ict' %}"> ICT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="section-eight" id="services-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+{#                    <h2 class="handyman-text fade_down pt-0">Adipiscing iaculis iaculis enim enim magna sociis morbi#}
+{#                        interdum varius.</h2>#}
+                    <p class="fusce fade_down">Our ICT services help businesses navigate
+                        and thrive in the digital era through smart
+                        solutions that blend strategy, creativity, and
+                        technology.
+
+                    </p>
+                    <h4 class="interdum fade_down">Digital Marketing & Product Activation</h4>
+
+                    <div class="plan-body plumbing-body-list fade_down">
+
+                        <ol>
+                            <li><b>Integrated Digital Campaigns:</b>  Cross-platform advertising (Google, Meta, YouTube) tailored to your brand objectives.</li>
+                            <li><b>Social Media Strategy & Management:</b> Content creation, scheduling, community management, and analytics.</li>
+                            <li><b>Experiential Marketing:</b> In-store activations, brand roadshows,and consumer sampling campaigns to enhance brand engagement.</li>
+                            <li><b>Influencer & Affiliate Marketing: </b> Targeted partnerships with influencers to drive brand trust and conversion.</li>
+                            <li><b>Event Branding & Promotions: </b> Design and management of impactful promotional events aligned with client goals.</li>
+                        </ol>
+                    </div>
+
+                    <div class="plumbing-grid img-animation-style1 reveal">
+                        <img src="{% static 'images/services-page/cleaning-services-img6.jpg' %}" alt="roofing-services-img3">
+                        <img src="{% static 'images/services-page/cleaning-services-img3.jpg' %}" alt="roofing-services-img4">
+                    </div>
+
+                    <h4 class="interdum fade_down">ICT Infrastructure & Support</h4>
+
+                    <div class="plan-body plumbing-body-list fade_down">
+
+                        <ol>
+                            <li><b>Network & Server Setup:</b> Installation and configuration of LAN/WAN systems, Wi-Fi, and secure server environments.</li>
+                            <li><b>Systems Integration: </b> Linking various platforms (ERP, CRM, POS) for smoother operations and centralized data management.</li>
+                            <li><b>IT Support & Maintenance:</b> On-call and on-site technical support, system upgrades, and troubleshooting. </li>
+                            <li><b>Cloud Solutions & Cybersecurity: </b> Cloud hosting, data backup solutions, and security protocols against digital threats.</li>
+                        </ol>
+                    </div>
+
+                    <div class="plumbing-grid img-animation-style1 reveal">
+                        <img src="{% static 'images/services-page/cleaning-services-img4.jpg' %}" alt="roofing-services-img3">
+                        <img src="{% static 'images/services-page/cleaning-services-img5.jpg' %}" alt="roofing-services-img4">
+                    </div>
+                </div>
+
+
+{#                Include sevices sidebar#}
+                {% include 'includes/services-sidebar.html' %}
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Teams Section  ===================================== -->
+
+    {% include 'includes/faq.html' %}
+
+
+{% endblock %}

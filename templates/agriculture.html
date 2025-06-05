@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block pageTitle %}<title>Agriculture</title>{% endblock %}
+
+
+{% block main %}
+    <!-- ====================================== Section One ===================================== -->
+     <section class="section-one">
+        <div class="page-img-header" id="electrical-service-bg">
+            <div class="container">
+                <h1 class="img-header-text fade_down">Agriculture Management</h1>
+                <div class="breadcrumb-group fade_up">
+                    <a href="{% url 'index' %}">HOME / </a>
+                    <a href=""> SERVICES /</a>
+                    <a href="{% url 'agriculture' %}">Agriculture Management</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="section-eight" id="services-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+{#                    <h2 class="handyman-text fade_down pt-0">Adipiscing iaculis iaculis enim enim magna sociis morbi#}
+{#                        interdum varius.</h2>#}
+{#                    <p class="fusce fade_down">At Gacrux Consultants Ltd, we understand#}
+{#                        that navigating legal, regulatory, and statutory requirements can be overwhelming#}
+{#                        for businesses. Our Business Compliance Services are designed to simplify the process#}
+{#                        and ensure your operations remain fully aligned with Kenyan laws and international#}
+{#                        standards. Our Compliance Solutions Include:#}
+{#                        Company Registration & Structuring Assistance with business name registration,#}
+{#                        incorporation, and restructuring of entities.#}
+{##}
+{#                    </p>#}
+                    <h2 class="interdum fade_down">Project Design & Implementation: </h2>
+                     <p class="fusce fade_down">From smallholder programs to commercial farms, we guide project rollout including land preparation, input procurement, and planting schedules.</p>
+
+                    <h2 class="interdum fade_down">Sustainable Agriculture Advisory: </h2>
+                     <p class="fusce fade_down">Promoting climate-smart agriculture, organic practices, and regenerative systems.</p>
+
+                    <h2 class="interdum fade_down">Agri-tech Integration:</h2>
+                     <p class="fusce fade_down">Deploying precision agriculture technologies such as soil sensors, drone mapping, and automated irrigation.</p>
+
+                    <h2 class="interdum fade_down">Monitoring and Impact Assessment:</h2>
+                     <p class="fusce fade_down">Using data tools to measure productivity, ROI, and socio-economic impact.</p>
+
+                    <div class="plumbing-grid img-animation-style1 reveal">
+                        <img src="{% static 'images/services-page/electrical-services-img2.jpg' %}" alt="roofing-services-img3">
+                        <img src="{% static 'images/services-page/electrical-services-img3.jpg' %}" alt="roofing-services-img4">
+                    </div>
+                </div>
+
+
+{#                Include sevices sidebar#}
+                {% include 'includes/services-sidebar.html' %}
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Teams Section  ===================================== -->
+
+    {% include 'includes/faq.html' %}
+
+
+{% endblock %}

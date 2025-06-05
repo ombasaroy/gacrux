@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+     <section class="installation-section">
+        <div class="container">
+            <div class="quality-main ourProcess fade_down">
+                <p class="quality">404 ERROR</p>
+            </div>
+            <h2 class="handyman-text legal fade_down">Oops ! Page Not Found.</h2>
+            <p class="fusce iaculis fade_down">It seems you've reached a dead end. Let’s get you back <a href="{% url 'index' %}" style="color: #ff6a00;">Home</a>
+            </p>
+            <div class="robot-img-text">
+                <div class="oops">OOPS...</div>
+                <img src="{% static 'images/error-page/robot.png' %}" alt="robot">
+                <div class="error-text">
+                    <h2 class="Error404-text" data-text="404">404</h2>
+                    <p class="Error404-text error" data-text="ERROR">ERROR</p>
+                </div>
+            </div>
+{#            <div class="testimonials-btn mt-0 fade_down">#}
+{#                <a href="index.html" class="btn-main btn2">Back To Home#}
+{#                    <span class="arrow-section">#}
+{#                        <img class="arrow" src="assets/images/svg/right-arrow-svg.svg" alt="right-arrow-svg">#}
+{#                    </span>#}
+{#                    <div class="btn-box-left btn2"></div>#}
+{#                    <div class="btn-box-right btn2"></div>#}
+{#                </a>#}
+{#            </div>#}
+        </div>
+    </section>
+
+{% endblock %}
