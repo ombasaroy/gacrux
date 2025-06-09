@@ -214,6 +214,7 @@
 {#                        arcu. Urna pretium et nec eu viverra lacinia vitae. Est volutpat egestas libero viverra.#}
 {#                    </p>#}
                     <form class="req-form-main">
+                        {% csrf_token %}
                         <div class="input-main">
                             <input type="text" placeholder="Your Name*" name="YourName">
                             <input type="text" placeholder="Email ID*" name="EmailID">
